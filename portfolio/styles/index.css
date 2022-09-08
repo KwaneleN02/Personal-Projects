@@ -81,7 +81,7 @@ body
 
 .split-web
 {
-    background:linear-gradient( var(--overlay-bg-color)),url(https://unsplash.com/photos/4hbJ-eymZ1o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink);
+    background:linear-gradient( var(--overlay-bg-color)),url(../images/coding.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
