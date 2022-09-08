@@ -1,0 +1,122 @@
+
+:root
+{
+    --overlay-bg-color:rgba(0, 0, 0, 0.563) 100%, rgba(0, 0, 0, 0.876)100%;
+    --brands-bg-color:rgba(0, 0, 0, 0.81) 100%, rgba(0, 0, 0, 0.876)100%;
+    --web-btn-hover-color:rgba(0, 88, 94, 0.458);
+    --brand-btn-hover-color:rgb(21, 65, 130);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a:link
+{
+    color: white;
+}
+
+body
+{
+    overflow: hidden;
+}
+
+/* blur text */
+
+.loading-text
+{
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+/* On landing page */
+.main-container
+{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    height: calc(100vh + 20px);
+    width: calc(100vw + 20px);
+    filter: blur(0px);
+}
+
+.split-brand
+{
+    background:linear-gradient( var(--brands-bg-color)), url(../images/Coffee_Cup_Logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 5rem;
+}
+
+.split-brand > h1, .split-web > h1
+{
+   font-size: 4rem; 
+}
+
+.split-web
+{
+    background:linear-gradient( var(--overlay-bg-color)),url(../Images/coding.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 5rem;
+}
+
+
+.webs-btn-link, .brands-btn-link
+{
+    border: 0.2px solid white; 
+    padding: 20px 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 1000ms;
+}
+
+.webs-btn-link:hover
+{
+    background-color: var(--web-btn-hover-color);
+    border-color:1px solid  var(--web-btn--hover-color);
+}
+
+.brands-btn-link:hover
+{
+    background-color: var(--brand-btn-hover-color);
+    border-color:1px solid  rgba(255, 255, 255, 0.512);  
+}
+
+a:visited
+{
+    color: white;
+}

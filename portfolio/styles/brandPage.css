@@ -1,0 +1,167 @@
+:root
+{
+    --slide-overlay-color:rgba(0, 0, 0, 0.413) 100%, rgba(0, 0, 0, 0.876)100%;
+    --melissa-bg-color:#f17901;
+    --coffeecup-bg-color:#1b383e;
+    --cavalry-bg-color:#061230;
+    --forwardC-bg-color:#023059;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-container
+{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide
+{
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.left-slide > div
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s ease-in-out;
+}
+
+.left-slide > h1
+{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.left-slide > .forward-creatives
+{
+    background-color: var(--forwardC-bg-color);
+    color: white;
+    font-weight: 700;
+}
+
+.left-slide > .melissa
+{
+    background-color: var(--melissa-bg-color);
+    color: white;
+    font-weight: 700;
+}
+
+.left-slide > .coffee-cup
+{
+    background-color: var(--coffeecup-bg-color);
+    color: white;
+    font-weight: 700;
+}
+
+.left-slide > .cavalry
+{
+    background-color: var(--cavalry-bg-color);
+    color: white;
+    font-weight: 700;
+}
+/* --- */
+
+.right-slide
+{
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    transition: transform .5s ease-in-out;
+
+}
+
+.right-slide > div 
+{
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 100%;
+   width: 100%; 
+}
+
+/* Image Slides */
+.right-slide > .melissa
+{
+    background: linear-gradient(var(--slide-overlay-color)),  url(../brand_Images/Melissa.png);
+}
+
+.right-slide > .coffee-cup
+{
+    background: linear-gradient(var(--slide-overlay-color)),  url(../brand_Images/cofee_cup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.right-slide > .cavalry
+{
+    background: linear-gradient(var(--slide-overlay-color)),  url(../brand_Images/cavalry.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+.right-slide > .forward-creatives
+{
+    background: linear-gradient(var(--slide-overlay-color)),  url(../brand_Images/Forward_Creatives-08.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Buttons */
+
+.material-icons
+{
+   position: absolute;
+   left: 35%;
+   top: 50%; 
+   background-color: white;
+   border: none;
+   border-radius: 10px;
+   padding: 15px;
+   color: rgb(57, 53, 53);
+   z-index: 100;
+   cursor: pointer;
+}
+
+
+
+.material-icons:hover
+{
+    background-color: rgb(2, 56, 56);
+    color: white;
+    transition: all 500ms ease-in;
+    transition: all 500ms ease-out;
+}
+
+
+.down
+{
+    transform: translateX(-100%);
+}
+
+.up
+{
+    transform: translateY(-100%);
+}
