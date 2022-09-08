@@ -1,5 +1,8 @@
 /* Nav */
-
+li > a
+{
+    color:black !important;
+}
 .navigation
 {
     z-index: 99;
