@@ -1,8 +1,5 @@
 /* Nav */
-li > a
-{
-    color:black !important;
-}
+
 .navigation
 {
     z-index: 99;
@@ -158,3 +155,4 @@ li
     font-weight: 700;
     border: 1px solid white;
 }
+
