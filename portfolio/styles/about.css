@@ -18,10 +18,10 @@ body
     background-repeat: no-repeat;
     background-color: #041C32;
     background-position: center center;
-    height: 100vh;
-    width: 100vw;
+    height: 150vh;
+    min-width: 100vw;
     color: #DDDDDD;
-    overflow: hidden;
+    overflow: auto;
 }
 
 
@@ -150,6 +150,25 @@ header
 
 
 
+@media screen and (max-width: 1280px)
+{
+    .body
+    {
+        overflow:auto !important;
+    }
+    .heading
+    {
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+
+    .heading p, h2
+    {
+        border: 2px solid white;
+        width: 100%;
+        text-align: center;
+    } 
+}
 
 @media screen and (max-width: 912px)
 
@@ -162,10 +181,23 @@ header
         background-repeat: repeat;
         overflow-y: scroll;
     }
-    
-     .heading
+
+    .skills
     {
-        margin-top: 10rem;
+        padding-top: 3rem;
+    }
+
+    .heading
+    {
+        margin-top: 20rem;
+        flex-direction: column;
+    }
+
+    .heading p, h2
+    {
+        border: 2px solid white;
+        width: 100%;
+        text-align: center;
     }
 
     .about-img
@@ -181,15 +213,11 @@ header
         width: 50%;
         border-radius: 50%;
     }
-    .skills
-    {
-        padding-top: 3rem;
-    }
 
-  .qualifications
-  {
-    flex-direction: column;
-  }
+    .qualifications
+    {
+        flex-direction: column;
+    }
 
     .experience:first-child
     {
