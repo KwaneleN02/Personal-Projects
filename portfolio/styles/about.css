@@ -164,7 +164,6 @@ header
 
     .heading p, h2
     {
-        border: 2px solid white;
         width: 100%;
         text-align: center;
     } 
@@ -195,7 +194,6 @@ header
 
     .heading p, h2
     {
-        border: 2px solid white;
         width: 100%;
         text-align: center;
     }
