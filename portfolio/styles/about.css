@@ -162,7 +162,25 @@ header
         background-repeat: repeat;
         overflow-y: scroll;
     }
+    
+     .heading
+    {
+        margin-top: 10rem;
+    }
 
+    .about-img
+    {
+
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-img > img
+    {
+        width: 50%;
+        border-radius: 50%;
+    }
     .skills
     {
         padding-top: 3rem;
