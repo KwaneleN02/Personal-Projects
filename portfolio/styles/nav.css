@@ -102,6 +102,10 @@ li
     text-transform: uppercase;
 }
 
+.nav-item:link
+{
+    color: black;
+}
 .nav-item:visited
 {
     color: black;
