@@ -140,7 +140,7 @@ li
 .loading-text
 {
     position: absolute;
-    z-index: 100;
+    z-index: 200;
     color: white;
     top: 50%;
     left: 50%;
@@ -154,5 +154,20 @@ li
     padding: 20px;
     font-weight: 700;
     border: 1px solid white;
+}
+
+.hire-me
+{
+    background-color: rgb(1, 60, 60);
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.hire-me a:visited
+{
+    color: white !important;
 }
 

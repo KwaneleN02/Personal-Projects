@@ -141,7 +141,7 @@
    border-radius: 10px;
    padding: 15px;
    color: rgb(57, 53, 53);
-   z-index: 100;
+   z-index: 90;
    cursor: pointer;
 }
 
@@ -164,4 +164,46 @@
 .up
 {
     transform: translateY(-100%);
+}
+
+
+
+/*  */
+
+@media screen and (max-width: 755px)
+{
+  *
+  {
+    text-align: center;
+  }
+
+  .left-slide
+  {
+    width: 40%;
+  }
+
+  .right-slide
+  {
+    width: 60%;
+    left: 40%;
+  }
+
+  .material-icons
+  {
+    left: 40%;
+    top: 60%;
+    padding: 2px;
+    z-index: 90;
+  }
+
+  h1
+  {
+    font-size:20px ;
+    text-align: center;
+  }
+  p
+  {
+    font-size: 12px;
+    text-align: center;
+  }
 }

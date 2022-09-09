@@ -1,0 +1,209 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root
+{
+    --slide-overlay-color:#000d18e2, #010b14d3;
+}
+
+body
+{
+    background: linear-gradient(var(--slide-overlay-color)),  url(../images/02_DarkBacground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #041C32;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    color: #DDDDDD;
+    overflow: hidden;
+}
+
+
+
+header
+{
+    height: 10vh;
+}
+
+.skills
+{
+    display: flex;
+    min-width: 100%;
+    gap: 20px;
+    background-color:#041C32;
+    color: #DDDDDD;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.experience-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.heading
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.qualifications-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+}
+
+.qualifications
+{
+    display: flex;
+    gap: 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.experience
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.experience > i
+{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    position: absolute;
+    top:2%;
+    align-items: center;
+    border: 2px dashed white;
+}
+
+.experience > h4
+{
+    position: absolute;
+    top: 20%;
+    font-size: 20px;
+}
+.experience > p, .experience > strong
+{
+    position: absolute;
+    top: 40%;
+}
+
+.experience:first-child
+{
+    padding-top: 10rem;
+}
+
+
+.about-img
+{
+
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img > img
+{
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+
+
+
+@media screen and (max-width: 912px)
+
+{
+
+    body
+    {
+        min-height: 150vh;
+        background: linear-gradient(var(--slide-overlay-color)),  url(../images/02_DarkBacground.jpg);
+        background-repeat: repeat;
+    }
+
+    .skills
+    {
+        padding-top: 3rem;
+    }
+
+  .qualifications
+  {
+    flex-direction: column;
+  }
+
+    .experience:first-child
+    {
+        position: relative;
+        height: auto;
+    }
+
+    .experience:nth-child(2), .experience:nth-child(3)
+    {
+        padding: 10rem;
+    }
+
+    .experience > h4
+    {
+        position: absolute;
+        top: 40%;
+        font-size: 20px;
+    }
+    .experience > p
+    {
+        position: absolute;
+        top: 60%;
+    }
+
+    .experience:first-child h4
+    {
+        position: absolute;
+        top: 20%;
+    }
+
+
+    .experience > i
+    {
+        top: 5%;
+    }
+}

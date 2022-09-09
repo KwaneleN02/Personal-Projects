@@ -5,6 +5,7 @@
     --easybank-bg-color:#1b383e;
     --todo-bg-color:#061230;
     --movie-bg-color:#000b14;
+    --forecast-bg-color:#250026;
 }
 *
 {
@@ -82,6 +83,13 @@
     color: white;
     font-weight: 700;
 }
+
+.left-slide > .forecast
+{
+    background-color: var(--forecast-bg-color);
+    color: white;
+    font-weight: 700;
+}
 /* --- */
 
 .right-slide
@@ -146,6 +154,14 @@
     background-position: center;
 }
 
+.right-slide > .forecast
+{
+    background: linear-gradient(var(--slide-overlay-color)),  url(../web_images/forecast.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 /* Buttons */
@@ -165,7 +181,6 @@
 }
 
 
-
 .material-icons:hover
 {
     background-color: rgb(2, 56, 56);
@@ -183,4 +198,44 @@
 .up
 {
     transform: translateY(-100%);
+}
+
+/* Media */
+
+@media screen and (max-width: 755px)
+{
+  *
+  {
+    text-align: center;
+  }
+
+  .left-slide
+  {
+    width: 45%;
+  }
+
+  .right-slide
+  {
+    width: 55%;
+    left: 45%;
+  }
+
+  .material-icons
+  {
+    left: 40%;
+    top: 60%;
+    padding: 2px;
+    z-index: 90;
+  }
+
+  h1
+  {
+    font-size:20px ;
+    text-align: center;
+  }
+  p
+  {
+    font-size: 12px;
+    text-align: center;
+  }
 }
