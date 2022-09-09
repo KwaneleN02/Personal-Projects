@@ -160,6 +160,7 @@ header
         min-height: 150vh;
         background: linear-gradient(var(--slide-overlay-color)),  url(../images/02_DarkBacground.jpg);
         background-repeat: repeat;
+        overflow-y: scroll;
     }
 
     .skills
